@@ -8,8 +8,8 @@
 
 @{
 
-# Script module or binary module file associated with this manifest
-ModuleToProcess = ''
+# Script module or binary module file associated with this manifest.
+#RootModule = 'Tridion-CoreService.psm1'
 
 # Version number of this module.
 ModuleVersion = '2.3.0.0'
@@ -48,7 +48,7 @@ CLRVersion = ''
 ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @()
+NestedModules = @("AppData", "Client", "Items", "Publishing", "Settings", "Trustees")
 
 # Assemblies that must be loaded prior to importing this module
 RequiredAssemblies = @()
@@ -63,7 +63,6 @@ TypesToProcess = @()
 FormatsToProcess = @()
 
 # Modules to import as nested modules of the module specified in ModuleToProcess
-NestedModules = @("AppData", "Client", "Items", "Publishing", "Settings", "Trustees")
 
 # Functions to export from this module
 FunctionsToExport = '*'
@@ -81,7 +80,7 @@ AliasesToExport = '*'
 ModuleList = @()
 
 # List of all files packaged with this module
-FileList = @("AppData.psm1", "Client.psm1", "Items.psm1", "Publishing.psm1", "Settings.psm1", "Trustees.psm1")
+FileList = @("Clients/Tridion.ContentManager.CoreService.Client.2011sp1.dll","Clients/Tridion.ContentManager.CoreService.Client.2013.dll", "Clients/Tridion.ContentManager.CoreService.Client.2013sp1.dll","Clients/Tridion.ContentManager.CoreService.Client.Web_8_1.dll","Clients/Tridion.ContentManager.CoreService.Client.Web_8_5.dll","Installation/Verify.ps1","AppData.psm1", "Client.psm1", "Items.psm1", "Publishing.psm1", "Settings.psm1", "Trustees.psm1")
 
 # Private data to pass to the module specified in ModuleToProcess
 PrivateData = ''
