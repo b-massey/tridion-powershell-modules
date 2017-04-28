@@ -27,7 +27,7 @@ CompanyName = 'SDL'
 Copyright = ''
 
 # Description of the functionality provided by this module
-Description = ''
+Description = 'Windows PowerShell module allowing management of SDL Tridion (Content Management System) from the command line'
 
 # Minimum version of the Windows PowerShell engine required by this module
 PowerShellVersion = '3.0'
