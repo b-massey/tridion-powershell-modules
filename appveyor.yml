@@ -9,3 +9,4 @@ deploy_script:
 - ps: Publish-Module -Name 'CoreService\Tridion-CoreService.psd1' -NuGetApiKey $env:NugetApiKey
   on: 
     branch: master
+build: off
